@@ -12,7 +12,7 @@
 }
 
 body {
-    min-height: 80%;
+    
 }
 
 #page {
@@ -24,17 +24,15 @@ body {
 
 
 #colone {
-   
-    width: 382px;
-    background-image: linear-gradient(cyan, green);
+    width: 45%;
+    background-color: rgb(41,182,246);
     flex-direction: column;
-   
 }
 
 #page-central {
     background-color: rgb(238,238,238);
     
-    width: 807px;
+    width: 90%;
     flex-direction: column;
 }
 
@@ -59,48 +57,46 @@ h1 {
     border-bottom: solid #4CAF50;
     border-bottom-color: rgb(41,182,246);
     border-bottom-style: solid;
+   
     
 }
 h2 {
-    margin-bottom: 100px;
+    margin-bottom: 10%;
     margin-top: 2px;
     font-family: 'Lucida Sans';
 }
 
 h3 {
-    margin-left: 40px;
-    padding-bottom: 5px;
+    
+    margin-bottom: 2%;
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: bold;
     display: flex;
-    border-bottom: solid #4CAF50;
-    border-bottom-color: rgb(41,182,246);
-    border-bottom-style: solid;
-    border-bottom-width: medium;
+   
 }
 
 h4 {
-    
-    font-size: 30px;
-    text-align: center;
-    
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+    font-weight: normal;
+    font-family: LEMONMILK;
 }
 
 h5 {
-    text-align: justify;
-    margin-top: 5px;
-    font-size: 20px;
-    margin-left: 200px;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-}
-
-
-
-time {
     text-align: left;
+    
+    font-size: 20px;
+   margin-top: 2px;
+   margin-bottom: 2px;
+   
+    margin-right: 5px;
+    
+    
+    font-weight: normal;
 }
+
 
 p {
     text-align: justify;
@@ -120,98 +116,162 @@ p {
     margin-left: 60px;
 }
 
-#logoUn {
-    color: rgb(109,76,65);
-    
-   
-}
 
-.fas  {
-    font-weight: 900;
+
+.icone {
+   
     color: rgb(41,182,246);
-    display: inline-block;
+    
     font-family: "Font Awesome 5 Pro";
-    font-size: 22.5px;
-    font-style: normal;
-    font-variant: normal;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
-    font-variant-east-asian: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-weight: 900;
-    line-height: 22.5px;
-    text-rendering: auto;
+    font-size: 25px;
+    margin-top: 22px;
+   
     text-transform: uppercase;
-    margin-right: 30px;
+    margin-right: 5%;
+    
 }
 
 ul {
-margin-left: 15px;
+
  margin-bottom: 2px;
+ list-style: none;
+
 }
 
 
 .entourage {
     background-color: rgb(109,76,65);
     color: rgb(41,182,246);
+    text-align: center;
 }
 
 article {
-    text-align: justify;
-    margin-left: 200px;
-    margin-top: 5px;
-    margin-right: 10px;
+    text-align: left;
+    
+    
+    margin-right: 20px;
 }
 
+#contact {
+    text-align: center;
+    margin-top: 30px;
+}
 #propos {
-    margin-bottom: 260px;
+    margin-bottom:150%;
+    text-align: center;
+    margin-top: 30px;
 }
 
+
+#loisirs {
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
 .listecontact {
     list-style-type: none;
 }
 
 li{
     margin-top: 7px;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-/*@media screen and (max-width: 1200px) {
-    #bordure {
+#experience {
+   display: flex;
+   flex-direction: column;
+  text-align: justify;
+ 
+ 
+}
+
+#recommandations {
+    display: flex;
+    justify-content: space-around;
+}
+
+#formation {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.puce {
+    color: rgb(41,182,246);
+    margin-right: 10px;
+}
+.puce::before {
+    
+    color: rgb(41,182,246);
+}
+
+.pucedate {
+    display: flex;
+    margin-right: 10px;    
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+.date {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.titre {
+    display: flex;
+    border-bottom: solid;
+    border-bottom-color: rgb(41,182,246);
+    border-bottom-width: medium;
+    margin-left: 5%;
+    margin-right: 5%;
+   margin-top: 5%;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.loisir {
+    color: rgb(109,76,65);
+    margin-right: 25px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 45px;
+    border: solid;
+    border-radius: 100%;
+    
+}
+
+.maxime {
+    margin-top: 25px;
+}
+
+.jack {
+    margin-top: 25px;
+}
+@media screen and (max-width: 1200px) {
+    #page {
+        width: auto;
         display: none;
     }
 
-    section {
-        display: block;
-        margin-right: 2%;
-        margin-top: 2%;
+    #colone {
         width: auto;
     }
 
-    #conteneur {
+    #page-central {
         width: auto;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    p {
-        text-align: center;
-    }
-
-    img {
-        float: right;
-        border: 1px solid black;
-        box-shadow: 2px 2px 2px black;
-    }
-
-    h2 {
-        margin-top: 10%;
-    }
-
-    a {
-        display: inline-block;
     }
 }
-    */
+    
