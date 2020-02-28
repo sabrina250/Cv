@@ -25,7 +25,7 @@ body {
 
 #colone {
     width: 45%;
-    background-color: rgb(41,182,246);
+    background-color: rgb(0,191,255);
     flex-direction: column;
 }
 
@@ -48,17 +48,15 @@ h1 {
 }
 
 #prenom {
-    color: rgb(41,182,246);
+    color: rgb(0,191,255);
 }
 
 #tiret {
     margin-left: 6.5%;
     padding-bottom: 10px;
     border-bottom: solid #4CAF50;
-    border-bottom-color: rgb(41,182,246);
+    border-bottom-color: rgb(0,191,255);
     border-bottom-style: solid;
-   
-    
 }
 h2 {
     margin-bottom: 10%;
@@ -80,6 +78,7 @@ h4 {
     font-size: 20px;
     margin-bottom: 2px;
     margin-top: 15px;
+    
     font-weight: normal;
     font-family: LEMONMILK;
 }
@@ -100,7 +99,7 @@ h5 {
 
 p {
     text-align: justify;
-    margin-left: 15px;
+    
     margin-right: 15px;
 }
 
@@ -119,16 +118,12 @@ p {
 
 
 .icone {
-   
-    color: rgb(41,182,246);
-    
+    color: rgb(0,191,255);
     font-family: "Font Awesome 5 Pro";
     font-size: 25px;
     margin-top: 22px;
-   
     text-transform: uppercase;
     margin-right: 5%;
-    
 }
 
 ul {
@@ -141,7 +136,7 @@ ul {
 
 .entourage {
     background-color: rgb(109,76,65);
-    color: rgb(41,182,246);
+    color: rgb(0,191,255);
     text-align: center;
 }
 
@@ -157,13 +152,13 @@ article {
     margin-top: 30px;
 }
 #propos {
-    margin-bottom:150%;
+    margin-bottom:280%;
     text-align: center;
     margin-top: 30px;
 }
 
 
-#loisirs {
+#logos {
     display: flex;
     text-align: center;
     align-content: center;
@@ -173,23 +168,27 @@ article {
 }
 
 li{
-    margin-top: 7px;
-    margin-bottom: 15px;
+    margin-top: 2px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 #experience {
    display: flex;
-   flex-direction: column;
+   flex-direction:column;
   text-align: justify;
  
  
 }
 
-#recommandations {
+#contener {
     display: flex;
     justify-content: space-around;
+    align-content: center;
+    
 }
+
+
 
 #formation {
     display: flex;
@@ -198,7 +197,7 @@ li{
 }
 
 .puce {
-    color: rgb(41,182,246);
+    color: rgb(0,191,255);
     margin-right: 10px;
 }
 .puce::before {
@@ -219,11 +218,13 @@ li{
     width: 100%;
     
     
+    
 }
 
 .date {
     display: flex;
     width: 100%;
+    
 }
 
 
@@ -231,11 +232,11 @@ li{
 .titre {
     display: flex;
     border-bottom: solid;
-    border-bottom-color: rgb(41,182,246);
+    border-bottom-color: rgb(0,191,255);
     border-bottom-width: medium;
     margin-left: 5%;
     margin-right: 5%;
-   margin-top: 5%;
+    margin-top: 5%;
     text-transform: uppercase;
     font-size: 1em;
     font-weight: bold;
@@ -249,29 +250,124 @@ li{
     margin-top: 10px;
     font-size: 45px;
     border: solid;
-    border-radius: 100%;
+    border-radius: 50%;
+    padding: 7px;
     
 }
 
-.maxime {
+.nadia {
     margin-top: 25px;
 }
 
-.jack {
+.jawad {
     margin-top: 25px;
 }
-@media screen and (max-width: 1200px) {
-    #page {
+
+#photomasque {
+    display: none;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1024px) {
+
+
+   #page {
+        flex-direction: column-reverse;
         width: auto;
-        display: none;
+        margin-left: 1px;
+        margin-right: 1px; 
+        
     }
-
     #colone {
         width: auto;
+        
+        background-color: rgb(0,191,255);
     }
 
     #page-central {
         width: auto;
+        display: block;
+        background-color: rgb(238,238,238);
     }
+   
+  
+
+    #propos {
+        margin-bottom: 15px;
+        width: auto;
+        display: block;
+    }
+
+    .listecontact {
+        text-align: center;
+        margin: auto;
+        width: auto;
+
+    }
+
+    .date {
+        width: auto;
+    }
+    #contact {
+        width: auto;
+
+    }
+
+    .pucedate {
+        width: auto;
+        flex-direction: column;
+    }
+    #recommandations {
+        flex-direction: column;
+    }
+      
+    #photo {
+        display: none;
+    }
+
+    #photomasque {
+        display: flex;
+        overflow: hidden; 
+        margin-left: 50px;
+        max-width: 155px;
+        border-radius: 50%;
+    }
+
+   
+
+  
+    #logos {
+        align-items: center;
+    }
+    
+
+ 
+
+   #contener {
+       flex-direction: column;
+   }
+
+    .loisir {
+        font-size: 70px;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .fas.fa-dog {
+        margin: auto;
+    }
+
+    .fas.fa-book {
+        margin: auto;
+    }
+
 }
     
