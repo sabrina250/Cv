@@ -1,19 +1,15 @@
 ﻿
-//feuille CSS de mon curiculum vitae
-
-//police d'ecriture
 @font-face {
     font-family: 'KaushanScript-Regular';
-    src: url('doc/KaushanScript-Regular.otf');
+    src: url('KaushanScript-Regular.otf');
 }
 
 @font-face{
     font-family: 'LEMONMILK';
-    src:url('doc/LEMONMILK-Light.otf');
+    src:url('LEMONMILK-Light.otf');
 
 }
 
-//css sur la page
 
 
 body {
@@ -157,7 +153,7 @@ article {
     margin-top: 30px;
 }
 #propos {
-    margin-bottom:280%;
+    margin-bottom:220%;
     text-align: center;
     margin-top: 30px;
 }
@@ -168,6 +164,7 @@ article {
     text-align: center;
     align-content: center;
     margin-top:20px;
+    margin-bottom: 20px;
 }
 .listecontact {
     list-style-type: none;
@@ -191,6 +188,7 @@ li{
     display: flex;
     justify-content: space-around;
     align-content: center;
+    margin-bottom: 20px;
     
 }
 
@@ -229,7 +227,7 @@ li{
 
 .date {
     display: flex;
-    width: 100%;
+    width: 50%;
     
 }
 
@@ -271,35 +269,43 @@ li{
 
 .nadia {
     margin-top: 25px;
+    margin-left: 30px;
 }
 
 .jawad {
     margin-top: 25px;
+    margin-right: 20px;
 }
 
 #photomasque {
     display: none;
 }
 
+#paragraphe {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 25px;
+
+}
 
 
 
 
-//css pour appareil avec ecran de moins de 1024 px
-
-@media all and (max-width: 1024px) {
 
 
-   #page {
+
+@media screen and (max-width: 1280px) {
+
+
+    #page {
         flex-direction: column-reverse;
         width: auto;
         margin-left: 1px;
-        margin-right: 1px; 
-        
+        margin-right: 1px;
     }
+
     #colone {
         width: auto;
-        
         background-color: rgb(0,191,255);
     }
 
@@ -308,8 +314,8 @@ li{
         display: block;
         background-color: rgb(238,238,238);
     }
-   
-  
+
+
 
     #propos {
         margin-bottom: 15px;
@@ -321,53 +327,49 @@ li{
         text-align: center;
         margin: auto;
         width: auto;
-
     }
 
-    .date {
-        width: auto;
-    }
+    
+
     #contact {
         width: auto;
-
     }
 
     .pucedate {
         width: auto;
-        
     }
+
     #recommandations {
         flex-direction: column;
     }
-      
+
     #photo {
         display: none;
     }
 
     #photomasque {
         display: flex;
-        overflow: hidden; 
+        overflow: hidden;
         margin-left: 50px;
         max-width: 155px;
         border-radius: 50%;
         height: 180px;
-        
     }
 
-   
 
-  
+
+
     #logos {
         align-items: center;
     }
-    
 
- 
 
-   #contener {
-       flex-direction: column;
-       margin-left: 40px;
-   }
+
+
+    #contener {
+        flex-direction: column;
+        margin-left: 40px;
+    }
 
     .loisir {
         display: flex;
@@ -387,5 +389,12 @@ li{
         margin: auto;
     }
 
+    .article {
+        margin-left: 10px;
+    }
+
+    .jawad {
+        margin-left: 30px;
+    }
 }
     
