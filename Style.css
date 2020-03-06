@@ -1,41 +1,16 @@
 ﻿
-@font-face {
-    font-family: 'KaushanScript-Regular';
-    src: url('KaushanScript-Regular.otf');
-}
+
+/*police importer*/
+
 
 @font-face{
     font-family: 'LEMONMILK';
-    src:url('LEMONMILK-Light.otf');
+    src:url('font/LEMONMILK-Light.otf');
 
 }
 
 
-
-body {
-    
-}
-
-#page {
-    display: flex;
-    margin-left: 493.5px;
-    margin-right: 493.5px;
-    max-width: 1191px;
-}
-
-
-#colone {
-    width: 45%;
-    background-color: rgb(0,191,255);
-    flex-direction: column;
-}
-
-#page-central {
-    background-color: rgb(238,238,238);
-    
-    width: 90%;
-    flex-direction: column;
-}
+/*mise en forme texte */
 
 h1 {
     
@@ -48,17 +23,7 @@ h1 {
     
 }
 
-#prenom {
-    color: rgb(0,191,255);
-}
 
-#tiret {
-    margin-left: 6.5%;
-    padding-bottom: 10px;
-    border-bottom: solid #4CAF50;
-    border-bottom-color: rgb(0,191,255);
-    border-bottom-style: solid;
-}
 h2 {
     margin-bottom: 10%;
     margin-top: 2px;
@@ -66,19 +31,18 @@ h2 {
 }
 
 h3 {
-    
     margin-bottom: 2%;
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: bold;
     display: flex;
-   
+    font-family: LEMONMILK;
 }
 
 h4 {
     font-size: 20px;
-    margin-bottom: 2px;
-    margin-top: 15px;
+    margin-bottom: 1px;
+    margin-top: 1px;
     
     font-weight: normal;
     font-family: LEMONMILK;
@@ -93,27 +57,66 @@ h5 {
    
     margin-right: 5px;
     
-    
+    font-family: sans-serif;
     font-weight: normal;
 }
 
 
 p {
     text-align: justify;
-    
+    font-family: sans-serif;
   
 }
 
+/*mise en forme des différentent parties de la page*/
+
+#page {
+    display: flex;
+    margin-left: 22%;
+    margin-right: 22%;
+    max-width: 1191px;
+}
 
 
+#colone {
+    width: 45%;
+    background-color: rgb(0,191,255);
+    flex-direction: column;
+}
+
+#page-central {
+    background-color: rgb(238,238,238);
+    width: 90%;
+    flex-direction: column;
+}
+
+
+/*mise en forme des éléments des pages*/
+
+
+#prenom {
+    color: rgb(0,191,255);
+}
+
+#tiret {
+    margin-left: 6.5%;
+    padding-bottom: 10px;
+    border-bottom: solid #4CAF50;
+    border-bottom-color: rgb(0,191,255);
+    border-bottom-style: solid;
+}
+
+ 
 #photo {
-    align-self: center;
+    
     overflow: hidden;
     max-height:150px;
     max-width: 150px;
     border-radius: 50%;
-    margin-top: 72px;
-    margin-left: 60px;
+    margin-right: 60px;
+    margin-top:60px;
+    margin-left: 90px;
+    margin-bottom: 60px;
 }
 
 
@@ -135,17 +138,20 @@ ul {
 }
 
 
+
 .entourage {
     background-color: rgb(109,76,65);
     color: rgb(0,191,255);
     text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 article {
     text-align: left;
     
     
-    margin-right: 20px;
+    margin-right: 5%;
 }
 
 #contact {
@@ -153,7 +159,7 @@ article {
     margin-top: 30px;
 }
 #propos {
-    margin-bottom:220%;
+    margin-bottom:170%;
     text-align: center;
     margin-top: 30px;
 }
@@ -203,6 +209,7 @@ li{
 .puce {
     color: rgb(0,191,255);
     margin-right: 10px;
+    margin-top: 20px;
 }
 .puce::before {
     
@@ -220,15 +227,14 @@ li{
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+   
     
     
 }
 
 .date {
-    display: flex;
     width: 50%;
-    
+    margin-right: 20px;
 }
 
 
@@ -277,6 +283,7 @@ li{
     margin-right: 20px;
 }
 
+/*photo masqué sur pc mais visible sur format responsive mobile et tablette*/
 #photomasque {
     display: none;
 }
@@ -289,15 +296,142 @@ li{
 }
 
 
+/*responsive pour écran de moins de 700 px*/
 
 
 
-
-
-@media screen and (max-width: 1280px) {
+@media all and (max-width: 700px) {
 
 
     #page {
+        flex-direction: column-reverse;
+        width: auto;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    #colone {
+        width: auto;
+        background-color: rgb(238,238,238);
+    }
+
+    #page-central {
+        width: auto;
+        display: block;
+        background-color: rgb(238,238,238);
+    }
+
+    h2 {
+        font-size: 20px;
+    margin-left: 20px;
+
+    }
+
+    p {
+        margin-right: 10px;
+    }
+
+    #propos {
+        margin-bottom: 15px;
+        width: auto;
+        display: block;
+    }
+
+    .listecontact {
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    .article {
+        width: auto;
+    }
+
+    #contact {
+        width: auto;
+        margin-top :2px;
+    }
+
+   .pucedate {
+   width: auto;
+       flex-direction: column;
+       }
+
+   h4 {
+   margin-top: 1px;
+   
+   }
+
+    #recommandations {
+        flex-direction: column;
+    }
+
+    #photo {
+        display: none;
+    }
+
+    #photomasque {
+        display: flex;
+        overflow: hidden;
+        margin-left: 50px;
+        max-width: 155px;
+        border-radius: 50%;
+        height: 160px;
+    }
+
+
+
+
+    #logos {
+        align-items: center;
+    }
+
+    #prenom {
+        margin-left: 5px;
+    }
+
+
+    #contener {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .loisir {
+        display: flex;
+        font-size: 70px;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+    }
+
+    .fas.fa-dog {
+        margin: auto;
+    }
+
+    .fas.fa-book {
+        margin: auto;
+    }
+
+   .nadia {
+   margin-left: 2px;
+   }
+
+   .puce {
+       display: none;
+   }
+    
+}
+    
+
+
+/* responsive pour écrans entre 700px et 1024 px*/
+
+
+
+@media all and (min-width: 700px ) and (max-width: 1024px) {
+     #page {
         flex-direction: column-reverse;
         width: auto;
         margin-left: 1px;
@@ -315,7 +449,9 @@ li{
         background-color: rgb(238,238,238);
     }
 
-
+   #tiret {
+       margin-left: 40px;
+   }
 
     #propos {
         margin-bottom: 15px;
@@ -333,6 +469,7 @@ li{
 
     #contact {
         width: auto;
+        margin-top: 1px;
     }
 
     .pucedate {
@@ -353,7 +490,7 @@ li{
         margin-left: 50px;
         max-width: 155px;
         border-radius: 50%;
-        height: 180px;
+        height: 160px;
     }
 
 
@@ -393,8 +530,8 @@ li{
         margin-left: 10px;
     }
 
-    .jawad {
-        margin-left: 30px;
+    .nadia {
+        margin-left: 0px;
     }
-}
     
+}
