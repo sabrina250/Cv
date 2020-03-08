@@ -65,6 +65,7 @@ h5 {
 p {
     text-align: justify;
     font-family: sans-serif;
+    margin-top: -1px;
   
 }
 
@@ -147,19 +148,14 @@ ul {
     padding-top: 5px;
 }
 
-article {
-    text-align: left;
-    
-    
-    margin-right: 5%;
-}
+
 
 #contact {
     text-align: center;
     margin-top: 30px;
 }
 #propos {
-    margin-bottom:170%;
+    margin-bottom:120%;
     text-align: center;
     margin-top: 30px;
 }
@@ -209,7 +205,7 @@ li{
 .puce {
     color: rgb(0,191,255);
     margin-right: 10px;
-    margin-top: 20px;
+    
 }
 .puce::before {
     
@@ -227,7 +223,8 @@ li{
     display: flex;
     flex-direction: column;
     width: 100%;
-   
+    text-align: left;
+    margin-right: 5%;
     
     
 }
@@ -421,6 +418,10 @@ li{
    .puce {
        display: none;
    }
+
+   .entourage {
+    color: rgb(238,238,238);
+   }
     
 }
     
@@ -440,7 +441,7 @@ li{
 
     #colone {
         width: auto;
-        background-color: rgb(0,191,255);
+        background-color: rgb(238,238,238);
     }
 
     #page-central {
@@ -532,6 +533,10 @@ li{
 
     .nadia {
         margin-left: 0px;
+    }
+
+    .entourage {
+        color: rgb(238,238,238);
     }
     
 }
