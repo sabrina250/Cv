@@ -28,6 +28,7 @@ h2 {
     margin-bottom: 10%;
     margin-top: 2px;
     font-family: 'Lucida Sans';
+    margin-left: 40px;
 }
 
 h3 {
@@ -100,9 +101,9 @@ p {
 }
 
 #tiret {
-    margin-left: 6.5%;
+    
     padding-bottom: 10px;
-    border-bottom: solid #4CAF50;
+    
     border-bottom-color: rgb(0,191,255);
     border-bottom-style: solid;
 }
@@ -176,6 +177,7 @@ li{
     margin-top: 2px;
     margin-bottom: 20px;
     text-align: left;
+    font-family: sans-serif;
 }
 
 #experience {
@@ -317,12 +319,14 @@ li{
         display: block;
         background-color: rgb(238,238,238);
     }
+    h1 {
+        
+    }
 
     h2 {
         font-size: 20px;
-    margin-left: 20px;
-
-    }
+        
+        }
 
     p {
         margin-right: 10px;
@@ -422,21 +426,28 @@ li{
    .entourage {
     color: rgb(238,238,238);
    }
+   #tiret {
+    padding-bottom: 1px;
+    
+    
+    border-bottom-color:rgb(0,191,255);
+    border-bottom-style: solid;
+}
     
 }
     
 
 
-/* responsive pour écrans entre 700px et 1024 px*/
+/* responsive pour écrans entre 700px et 1700 px*/
 
 
 
-@media all and (min-width: 700px ) and (max-width: 1024px) {
+@media all and (min-width: 700px ) and (max-width: 1700px) {
      #page {
         flex-direction: column-reverse;
         width: auto;
-        margin-left: 1px;
-        margin-right: 1px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #colone {
@@ -448,6 +459,10 @@ li{
         width: auto;
         display: block;
         background-color: rgb(238,238,238);
+    }
+
+    h2 {
+        margin-left: 0px;
     }
 
    #tiret {
