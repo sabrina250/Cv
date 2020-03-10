@@ -84,6 +84,7 @@ p {
     width: 45%;
     background-color: rgb(0,191,255);
     flex-direction: column;
+    display: flex;
 }
 
 #page-central {
@@ -156,7 +157,7 @@ ul {
     margin-top: 30px;
 }
 #propos {
-    margin-bottom:120%;
+    margin-bottom:auto;
     text-align: center;
     margin-top: 30px;
 }
@@ -438,11 +439,11 @@ li{
     
 
 
-/* responsive pour écrans entre 700px et 1700 px*/
+/* responsive pour écrans entre 700px et 1530 px*/
 
 
 
-@media all and (min-width: 700px ) and (max-width: 1700px) {
+@media all and (min-width: 700px ) and (max-width: 1530px) {
      #page {
         flex-direction: column-reverse;
         width: auto;
