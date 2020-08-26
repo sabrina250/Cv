@@ -70,12 +70,11 @@ p {
   
 }
 
-<<<<<<< HEAD
 img {
     max-width: 100%;
     
 }
-=======
+
 /*mise en forme des différentent parties de la page*/
 
 #page {
@@ -85,7 +84,8 @@ img {
     max-width: 1191px;
 }
 
->>>>>>> 7d1b7415dcc6abd24406d581e6ce55275eb0af75
+
+
 
 #colone {
     width: 45%;
@@ -328,12 +328,16 @@ li{
         background-color: rgb(238,238,238);
     }
     h1 {
-        
+        font-size: 30px
     }
 
     h2 {
         font-size: 20px;
-        
+        margin-left: 45px;
+        }
+
+        h3 {
+            font-size: 20px;
         }
 
     p {
